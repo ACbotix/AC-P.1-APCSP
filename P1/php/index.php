@@ -64,7 +64,7 @@ body {
 
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
-  <a href="javascript:void(0)">News</a>
+  <a href="news.php">News</a>
   <a href="javascript:void(0)">Contact</a>
 </div>
 
@@ -85,6 +85,10 @@ function myFunction() {
 </script>
 
 </body>
+
+
+
+
 
 <head>
 	<title>CGIMAGE</title>
@@ -130,21 +134,39 @@ function myFunction() {
 			background-attachment: fixed; 
 		}
 		
-		.caixa1 {
-			background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fstudio%2F&psig=AOvVaw2Pz-sDYtXOPfgb6o7JNQJJ&ust=1669999461527000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCLDQzpnu2PsCFQAAAAAdAAAAABAE");
-		}
+		.caixa1{
+        background: url('https://images.unsplash.com/photo-1584028887908-f6d2257fe9d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJldHR5fGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+        background-repeat: no repeat;
+        background-size: cover;
+		background-position: center;
+		background-attachment: fixed; 
+        }
 
-		.caixa2 {
-			background-image: url(imagens/model.jpg);
-		}
+		.caixa2{
+        background: url('https://images.pexels.com/photos/134469/pexels-photo-134469.jpeg?cs=srgb&dl=pexels-alexander-dummer-134469.jpg&fm=jpg');
+        background-repeat: no repeat;
+        background-size: cover;
+		background-position: center;
+		background-attachment: fixed; 
+        }
 
-		.caixa3 {
-			background-image: url(imagens/fotografia.jpg);
-		}
+		.caixa3{
+        background: url('https://external-preview.redd.it/XVykl0PpaioGuzEg7BY5DXcTh--JzAcB-xHc9Zo4uLI.jpg?auto=webp&s=c5c176e5d8ce83e41843076af71801790f27e821');
+        background-repeat: no repeat;
+        background-size: cover;
+		background-position: center;
+		background-attachment: fixed; 
+        }
 
-		.caixa4 {
-			background-image: url(imagens/imagem4.jpg);
-		}
+		.caixa4{
+        background: url('https://media.smallbiztrends.com/2016/05/shutterstock_311472353.jpg');
+        background-repeat: no repeat;
+        background-size: cover;
+		background-position: center;
+		background-attachment: fixed; 
+        }
+
+
 
 		.conteudo-titulo {
 			position: absolute;
