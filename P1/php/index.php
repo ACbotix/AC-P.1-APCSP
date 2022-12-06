@@ -39,7 +39,7 @@ body {
 
 
 #navbar a.active {
-  background-color: #04AA6D;
+  background-color: #777777;
   color: white;
 }
 
@@ -63,9 +63,9 @@ body {
 
 
 <div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
-  <a href="news.php">News</a>
-  <a href="javascript:void(0)">Contact</a>
+  <a class="active" href="index.php">Home</a>
+  <a href="news.php">Feedback</a>
+  <a href="Contact.php">Contact</a>
 </div>
 
 
@@ -209,8 +209,8 @@ function myFunction() {
 	</div>
 
 	<div class="conteudo">
-		<h3>IMAGE & VIDEO SPECIALIST</h3>
-		<p>It has the best team of professional photographers on the market. Experiences in the areas of journalism, fashion, advertising, major events, concerts and others. Image bank with more than 60,000 photographs in very high resolution. High production for major magazine brands. We provide services to advertising and communication agencies. Studio located in a noble area of ​​the city, with complete infrastructure and equipment with advanced technology.</p>
+		<h3>IMAGE & VIDEO SPECIALISTS</h3>
+		<p>We have the best team of professional photographers on the market. Experiences in the areas of journalism, fashion, advertising, major events, concerts and others. Image bank with more than 60,000 photographs in very high resolution. High production for major magazine brands. We provide services to advertising and communication agencies. Studio located in a noble area of ​​the city, with complete infrastructure and equipment with advanced technology.</p>
 
 		
 	</div>
@@ -223,9 +223,9 @@ function myFunction() {
 
 	<div class="conteudo">
 		<h3>CASTING MODEL</h3>
-		<p>For models, actors, actresses and many other professionals who somehow work with fashion and communication, casting is a very frequent word. For models, the casting room is their first field of work. Find out what Model Casting is, how it works and what is its importance for the career development of a professional…</p>
+		<p>For models, actors, actresses and many other professionals who work with fashion and communication, casting is a very frequent word. For models, the casting room is their first field of work. Find out what Model Casting is, how it works and what is its importance for the career development of a professional…</p>
 
-		<h3> COMO FUNCIONA? </h3>
+		<h3> HOW DO WE FUNCTION? </h3>
 		<p>In a casting, models are called, which can be in a group or individually for a certain location in the presence of an evaluation board. This selection requires great care in choosing the right people for each job, since it often works with very subjective questions, which are much more complex than the answer in a test, for example. Due to this complexity, the project team must know how to listen carefully to the clients' needs and be able to see them in the professionals enrolled for the selection.</p>
 	</div>
 
@@ -246,15 +246,14 @@ function myFunction() {
 
 <p class="fonte-30"> 
 
- <p>Contato: (1) 510-xxx-xxxx</p>
+ <p>Cell: (1) 510-xxx-xxxx</p>
  <p>E-mail: fotografiamodel@dgimagem.com</p>
-  <p id="rodape1"> Site made by P.1 APCSP mr. Millard| American High School @ 2022   </p>
+  <p id="rodape1"> Site made by P.1 APCSP mr. Millard | American High School | 2022   </p>
 </div></footer>
+
 </footer>
 </div>
 	
-</p></div>
-	</div><!--/ fim container-->
 
 </body>
 
