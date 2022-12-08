@@ -76,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             //Execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: Contact.php");
+                header("location: login.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -102,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link type="text/css" href="../css/style.css" rel="stylesheet"/>
+   
     <style>
         .wrapper{ 
             height: 100%;
@@ -114,8 +114,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             color: white;
         }
         body{
-            background-image: url();
-            background-size: cover;
+            background-color: #333333;
         }
         .title{
             text-align: center; 
@@ -127,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         #test{
             background-color: rgba(255,255,255,0.15);
             margin-top: 2%; 
-            margin-bottom: 4.5%;
+            margin-bottom: 1.5%;
         }
     </style>
 </head>
@@ -155,7 +154,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="sub" value="Submit">
                 <input type="reset" class="sub" value="Reset">
             </div>
-            <p>Already have an account? <a href="Contact.php">Login here</a>.</p>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>    
 </body>
