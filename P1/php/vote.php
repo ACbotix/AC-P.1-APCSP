@@ -86,9 +86,6 @@ function myFunction() {
 
 </body>
 
-
-
-
 <!--Voting Embed from strawpoll.com-->
 
 <div class="strawpoll-embed" id="strawpoll_05Zd1oAXby6" style="height: 1696px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_05Zd1oAXby6" src="https://strawpoll.com/embed/polls/05Zd1oAXby6" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
