@@ -1,7 +1,6 @@
 <html>
-<!-- this page displays a gallery of nature images-->
+<!-- Nature Image Gallery Page -->
 <head>
-<!-- sticky navbar-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -17,6 +16,7 @@
       text-align: center;
     }
 
+    /* Nav Bar Styles */
     #navbar {
       overflow: hidden;
       background-color: #333;
@@ -48,6 +48,7 @@
       color: white;
     }
 
+    /* Dropdown Menu Styles */
     .dropdown {
       float: left;
       overflow: hidden;
@@ -62,9 +63,7 @@
       padding: 14px 16px;
       background-color: inherit;
       font-family: inherit;
-      /* Important for vertical align on mobile phones */
       margin: 0;
-      /* Important for vertical align on mobile phones */
     }
 
     #navbar a:hover .dropdown:hover .dropbtn {
@@ -111,29 +110,7 @@
       padding-top: 60px;
     }
 
-    /*
-    div.gallery {
-      margin: 5px;
-      border: 1px solid #ccc;
-      float: left;
-      width: 180px;
-    }
-
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
-
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    */
-
+    /* Gallery Styles */
     .container {
       max-width: 1600px;
       margin: 50 auto;
@@ -180,7 +157,10 @@
       font-size: 1.5em;
     }
 
-    /* Because there is no hover on a touch device, we need to move the text to the bottom of the image and display it by default */
+    /* 
+    For touch devices, hover action is not available. 
+    Displaying the text at the bottom of the image. 
+    */
     @media only screen and (max-width: 1024px) {
       .text-wrapper {
         opacity: 1;
@@ -195,9 +175,8 @@
   </style>
 </head>
 
-
-<!--Sticky Navbar Links-->
 <body>
+  <!-- Sticky Nav Bar -->
   <script>
     window.onscroll = function () { myFunction() };
 
@@ -212,103 +191,144 @@
       }
     }
   </script>
+
+  <!-- Navigation Bar -->
   <div id="navbar">
+    <!-- Home Tab -->
     <a id="home" href="home.php">Home</a>
+    <!-- Feedback Tab -->
     <a id="feedback" href="login.php">Feedback</a>
+    <!-- Gallery Dropdown Menu Tab - Active -->
     <div class="dropdown active">
       <button id="gallery" class="dropbtn">Gallery
+        <!-- dropdown icon from font-awesome.js -->
         <i class="fa fa-caret-down"></i>
       </button>
+      <!-- Dropdown Menu Items -->
       <div class="dropdown-content">
+        <!-- Nature Gallery Menu Item - Active -->
         <a class="active" href=nature_gallery.php>Nature</a>
+        <!-- People Gallery Menu Item -->
         <a href="people_gallery.php">People</a>
+        <!-- Modern Gallery Menu Item -->
         <a href="modern_gallery.php">Modern Art</a>
       </div>
     </div>
   </div>
-  <div>
+
+  <!-- Container for Gallery Content -->
+  <div class="container">
+    <!-- Gallery Title -->
     <div>
       <h1 style="text-align:center">Nature Photography</h1>
     </div>
-    <div class="container">
+    <!-- Gallery -->
+    <div class="gallery">
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature1.jpg">
+        <!-- Image -->
+        <img src="../images/nature1.jpg" alt="Look deep into nature, and then you will understand everything better." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Look deep into nature, and then you will understand everything better.</span>
+        </span>
+      </a>
 
-      <div class="gallery">
-        <a class="gallery-item" target="_blank" href="../images/nature1.jpg">
-          <img src="../images/nature1.jpg" alt="Look deep into nature, and then you will understand everything better." />
-          <span class="text-wrapper">
-            <span class="title">Look deep into nature, and then you will understand everything better.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature2.jpg">
+        <!-- Image -->
+        <img src="../images/nature2.jpg" alt="Nature does not hurry, yet everything is accomplished." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Nature does not hurry, yet everything is accomplished.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature2.jpg">
-          <img src="../images/nature2.jpg" alt="Nature does not hurry, yet everything is accomplished." />
-          <span class="text-wrapper">
-            <span class="title">Nature does not hurry, yet everything is accomplished.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature3.jpg">
+        <!-- Image -->
+        <img src="../images/nature3.jpg" alt="Autumn is a second spring when every leaf is a flower." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Autumn is a second spring when every leaf is a flower.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature3.jpg">
-          <img src="../images/nature3.jpg" alt="Autumn is a second spring when every leaf is a flower." />
-          <span class="text-wrapper">
-            <span class="title">Autumn is a second spring when every leaf is a flower.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature4.jpg">
+        <!-- Image -->
+        <img src="../images/nature4.jpg" alt="In all things of nature there is something of the marvelous." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">In all things of nature there is something of the marvelous.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature4.jpg">
-          <img src="../images/nature4.jpg" alt="In all things of nature there is something of the marvelous." />
-          <span class="text-wrapper">
-            <span class="title">In all things of nature there is something of the marvelous.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature5.jpg">
+         <!-- Image -->
+        <img src="../images/nature5.jpg" alt="Nature does not hurry, yet everything is accomplished." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Nature does not hurry, yet everything is accomplished.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature5.jpg">
-          <img src="../images/nature5.jpg" alt="Nature does not hurry, yet everything is accomplished." />
-          <span class="text-wrapper">
-            <span class="title">Nature does not hurry, yet everything is accomplished.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature6.jpg">
+         <!-- Image -->
+        <img src="../images/nature6.jpg"
+          alt="For my part I know nothing with any certainty, but the sight of the stars makes me dream." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">For my part I know nothing with any certainty, but the sight of the stars makes me
+            dream.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature6.jpg">
-          <img src="../images/nature6.jpg"
-            alt="For my part I know nothing with any certainty, but the sight of the stars makes me dream." />
-          <span class="text-wrapper">
-            <span class="title">For my part I know nothing with any certainty, but the sight of the stars makes me
-              dream.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature7.jpg">
+         <!-- Image -->
+        <img src="../images/nature7.jpg"
+          alt="For in the true nature of things, if we rightly consider, every green tree is far more glorious than if it were made of gold and silver." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">For in the true nature of things, if we rightly consider, every green tree is far more
+            glorious than if it were made of gold and silver.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature7.jpg">
-          <img src="../images/nature7.jpg"
-            alt="For in the true nature of things, if we rightly consider, every green tree is far more glorious than if it were made of gold and silver." />
-          <span class="text-wrapper">
-            <span class="title">For in the true nature of things, if we rightly consider, every green tree is far more
-              glorious than if it were made of gold and silver.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature8.jpg">
+         <!-- Image -->
+        <img src="../images/nature8.jpg"
+          alt="The sea, once it casts its spell, holds one in its net of wonder forever." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">The sea, once it casts its spell, holds one in its net of wonder forever.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature8.jpg">
-          <img src="../images/nature8.jpg"
-            alt="The sea, once it casts its spell, holds one in its net of wonder forever." />
-          <span class="text-wrapper">
-            <span class="title">The sea, once it casts its spell, holds one in its net of wonder forever.</span>
-          </span>
-        </a>
+      <!-- Gallery Item -->
+      <a class="gallery-item" target="_blank" href="../images/nature9.jpg">
+         <!-- Image -->
+        <img src="../images/nature9.jpg" alt="Nature is the art of God." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Nature is the art of God.</span>
+        </span>
+      </a>
 
-        <a class="gallery-item" target="_blank" href="../images/nature9.jpg">
-          <img src="../images/nature9.jpg" alt="Nature is the art of God." />
-          <span class="text-wrapper">
-            <span class="title">Nature is the art of God.</span>
-          </span>
-        </a>
-
-        <a class="gallery-item" target="_blank" href="../images/nature10.jpg">
-          <img src="../images/nature10.jpg"
-            alt="Over every mountain there is a path, although it may not be seen from the valley." />
-          <span class="text-wrapper">
-            <span class="title">Over every mountain there is a path, although it may not be seen from the valley.</span>
-          </span>
-        </a>
-      </div>
+      <!-- Gallery Item --> 
+      <a class="gallery-item" target="_blank" href="../images/nature10.jpg">
+         <!-- Image -->
+        <img src="../images/nature10.jpg"
+          alt="Over every mountain there is a path, although it may not be seen from the valley." />
+        <!-- Image Text -->
+        <span class="text-wrapper">
+          <span class="title">Over every mountain there is a path, although it may not be seen from the valley.</span>
+        </span>
+      </a>
     </div>
   </div>
 </body>

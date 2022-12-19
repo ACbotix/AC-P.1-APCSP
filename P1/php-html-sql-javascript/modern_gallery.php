@@ -1,7 +1,6 @@
 <html>
-<!-- this page shows a gallery of modern art photos-->
+<!-- Modern Art Image Gallery Page -->
 <head>
-<!-- Sticky Navbar-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -17,6 +16,7 @@
             text-align: center;
         }
 
+        /* Nav Bar Styles */
         #navbar {
             overflow: hidden;
             background-color: #333;
@@ -48,6 +48,7 @@
             color: white;
         }
 
+         /* Dropdown Menu Styles */
         .dropdown {
             float: left;
             overflow: hidden;
@@ -111,29 +112,7 @@
             padding-top: 60px;
         }
 
-        /*
-    div.gallery {
-      margin: 5px;
-      border: 1px solid #ccc;
-      float: left;
-      width: 180px;
-    }
-
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
-
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    */
-
+        /* Gallery Styles */
         .container {
             max-width: 1600px;
             margin: 50 auto;
@@ -180,7 +159,10 @@
             font-size: 1.5em;
         }
 
-        /* Because there is no hover on a touch device, we need to move the text to the bottom of the image and display it by default */
+        /* 
+        For touch devices, hover action is not available. 
+        Displaying the text at the bottom of the image. 
+        */
         @media only screen and (max-width: 1024px) {
             .text-wrapper {
                 opacity: 1;
@@ -196,6 +178,7 @@
 </head>
 
 <body>
+    <!-- Sticky Nav Bar -->
     <script>
         window.onscroll = function () { myFunction() };
 
@@ -211,126 +194,169 @@
         }
     </script>
 
-
-    <!--Sticky Navbar Links-->
+    <!-- Navigation Bar -->
     <div id="navbar">
+        <!-- Home Tab -->
         <a id="home" href="home.php">Home</a>
+        <!-- Feedback Tab -->
         <a id="feedback" href="login.php">Feedback</a>
+        <!-- Gallery Dropdown Menu Tab - Active -->
         <div class="dropdown active">
             <button id="gallery" class="dropbtn">Gallery
+                <!-- dropdown icon from font-awesome.js -->
                 <i class="fa fa-caret-down"></i>
             </button>
+            <!-- Dropdown Menu Items -->
             <div class="dropdown-content">
+                <!-- Nature Gallery Menu Item -->
                 <a href="nature_gallery.php">Nature</a>
+                <!-- People Gallery Menu Item -->
                 <a href="people_gallery.php">People</a>
+                <!-- Modern Gallery Menu Item - Active -->
                 <a class="active" href="modern_gallery.php">Modern Art</a>
             </div>
         </div>
     </div>
 
+    <!-- Container for Gallery Content -->
     <div class="container">
+        <!-- Gallery Title -->
         <div>
             <h1 style="text-align:center">Modern Art Photography</h1>
         </div>
-
-        <div>
-            <div class="gallery">
-                <a class="gallery-item" target="_blank" href="../images/modern1.jpg">
-                    <img src="../images/modern1.jpg" alt="Fifty grand for a paper bucket? Well it was all about context, you see." />
-                    <span class="text-wrapper">
-                        <span class="title">Fifty grand for a paper bucket? Well it was all about context, you see.
-                        </span>
+        <!-- Gallery -->
+        <div class="gallery">
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern1.jpg">
+                <!-- Image -->
+                <img src="../images/modern1.jpg" alt="Fifty grand for a paper bucket? Well it was all about context, you see." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Fifty grand for a paper bucket? Well it was all about context, you see.
                     </span>
-                </a>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern2.jpg">
-                    <img src="../images/modern2.jpg"
-                        alt="The audience can endorse the triviality of modern art, but they can’t like it." />
-                    <span class="text-wrapper">
-                        <span class="title">The audience can endorse the triviality of modern art, but they can’t like it.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern2.jpg">
+                <!-- Image -->
+                <img src="../images/modern2.jpg"
+                    alt="The audience can endorse the triviality of modern art, but they can’t like it." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">The audience can endorse the triviality of modern art, but they can’t like it.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern3.jpg">
-                    <img src="../images/modern3.jpg"
-                        alt="Art is an expression that transcends religion, culture, country, people and time." />
-                    <span class="text-wrapper">
-                        <span class="title">Art is an expression that transcends religion, culture, country, people and time.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern3.jpg">
+                <!-- Image -->
+                <img src="../images/modern3.jpg"
+                    alt="Art is an expression that transcends religion, culture, country, people and time." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Art is an expression that transcends religion, culture, country, people and time.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern4.jpg">
-                    <img src="../images/modern4.jpg"
-                        alt="I have never been against new art as such; some of it is good, much is crap, most is somewhere in between." />
-                    <span class="text-wrapper">
-                        <span class="title">I have never been against new art as such; some of it is good, much is crap, most is somewhere in between.
-                            better.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern4.jpg">
+                <!-- Image -->
+                <img src="../images/modern4.jpg"
+                    alt="I have never been against new art as such; some of it is good, much is crap, most is somewhere in between." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">I have never been against new art as such; some of it is good, much is crap, most is somewhere in between.
+                        better.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern5.jpg">
-                    <img src="../images/modern5.jpg"
-                        alt="Sanat, doğrudan bir kullanım değeri olmayan lüks maldır." />
-                    <span class="text-wrapper">
-                        <span class="title">Sanat, doğrudan bir kullanım değeri olmayan lüks maldır.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern5.jpg">
+                <!-- Image -->
+                <img src="../images/modern5.jpg"
+                    alt="Sanat, doğrudan bir kullanım değeri olmayan lüks maldır." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Sanat, doğrudan bir kullanım değeri olmayan lüks maldır.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern6.jpg">
-                    <img src="../images/modern6.jpg"Die Künste, die den Müll der Welt zu spiegeln vorgeben, vermehren ihn nur." />
-                    <span class="text-wrapper">
-                        <span class="title">Die Künste, die den Müll der Welt zu spiegeln vorgeben, vermehren ihn nur.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern6.jpg">
+                <!-- Image -->
+                <img src="../images/modern6.jpg"Die Künste, die den Müll der Welt zu spiegeln vorgeben, vermehren ihn nur." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Die Künste, die den Müll der Welt zu spiegeln vorgeben, vermehren ihn nur.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern7.jpg">
-                    <img src="../images/modern7.jpg"
-                        alt="Dreams are the clay through which we mold our art." />
-                    <span class="text-wrapper">
-                        <span class="title">Dreams are the clay through which we mold our art.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern7.jpg">
+                <!-- Image -->
+                <img src="../images/modern7.jpg"
+                    alt="Dreams are the clay through which we mold our art." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Dreams are the clay through which we mold our art.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern8.jpg">
-                    <img src="../images/modern8.jpg"
-                        alt="Modern art has to be what is called ‘intense.’ it is not easy to define being intense." />
-                    <span class="text-wrapper">
-                        <span class="title">Modern art has to be what is called ‘intense.’ it is not easy to define being intense.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern8.jpg">
+                <!-- Image -->
+                <img src="../images/modern8.jpg"
+                    alt="Modern art has to be what is called ‘intense.’ it is not easy to define being intense." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Modern art has to be what is called ‘intense.’ it is not easy to define being intense.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern9.jpg">
-                    <img src="../images/modern9.jpg"
-                        alt="Calcutta is like a work of modern art that neither makes sense nor has utility, but exists for some esoteric aesthetic reason." />
-                    <span class="text-wrapper">
-                        <span class="title">Calcutta is like a work of modern art that neither makes sense nor has utility, but exists for some esoteric aesthetic reason.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern9.jpg">
+                <!-- Image -->
+                <img src="../images/modern9.jpg"
+                    alt="Calcutta is like a work of modern art that neither makes sense nor has utility, but exists for some esoteric aesthetic reason." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Calcutta is like a work of modern art that neither makes sense nor has utility, but exists for some esoteric aesthetic reason.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern10.jpg">
-                    <img src="../images/modern10.jpg"
-                        alt="They lived off each other's hypocrisy, fuelling a worthless market of trash." />
-                    <span class="text-wrapper">
-                        <span class="title">They lived off each other's hypocrisy, fuelling a worthless market of trash.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern10.jpg">
+                <!-- Image -->
+                <img src="../images/modern10.jpg"
+                    alt="They lived off each other's hypocrisy, fuelling a worthless market of trash." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">They lived off each other's hypocrisy, fuelling a worthless market of trash.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern11.jpg">
-                    <img src="../images/modern11.jpg"
-                        alt="Stop thinking about art works as objects and start thinking about them as triggers for experiences." />
-                    <span class="text-wrapper">
-                        <span class="title">Stop thinking about art works as objects and start thinking about them as triggers for experiences.</span>
-                    </span>
-                </a>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern11.jpg">
+                <!-- Image -->
+                <img src="../images/modern11.jpg"
+                    alt="Stop thinking about art works as objects and start thinking about them as triggers for experiences." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">Stop thinking about art works as objects and start thinking about them as triggers for experiences.</span>
+                </span>
+            </a>
 
-                <a class="gallery-item" target="_blank" href="../images/modern12.jpg">
-                    <img src="../images/modern12.jpg"
-                        alt="What makes a work of art good for you is not something that s already inside it but something that happens inside you." />
-                    <span class="text-wrapper">
-                        <span class="title">What makes a work of art good for you is not something that s already inside it but something that happens inside you.</span>
-                    </span>
-                </a>
-            </div>
+            <!-- Gallery Item -->
+            <a class="gallery-item" target="_blank" href="../images/modern12.jpg">
+                <!-- Image -->
+                <img src="../images/modern12.jpg"
+                    alt="What makes a work of art good for you is not something that s already inside it but something that happens inside you." />
+                <!-- Image Text -->
+                <span class="text-wrapper">
+                    <span class="title">What makes a work of art good for you is not something that s already inside it but something that happens inside you.</span>
+                </span>
+            </a>
         </div>
     </div>
 </body>
